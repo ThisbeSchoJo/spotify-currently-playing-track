@@ -32,9 +32,13 @@ app.get('/api', async (_, res) => {
 
   try {
     const data = await spotifyApi.refreshAccessToken()
+    console.log("✅ Refresh success:", data.body)
+  
     spotifyApi.setAccessToken(data.body['access_token'])
+  
     const currentPlayingTrack = await spotifyApi.getMyCurrentPlayingTrack()
-
+    console.log("🎵 Now playing response:", JSON.stringify(currentPlayingTrack.body, null, 2))
+  
     if (Object.keys(currentPlayingTrack.body).length > 0) {
       if (currentPlayingTrack.body.item) {
         const currentPlayingTrackBodyItem = currentPlayingTrack.body
