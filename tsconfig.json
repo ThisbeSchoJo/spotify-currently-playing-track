@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "commonjs",
+    "module": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "moduleResolution": "Node"
   },
   "include": ["api/**/*.ts", "scripts/**/*.ts"],
   "exclude": ["node_modules"]

@@ -32,4 +32,4 @@ app.get('/', async (_, res) => {
   }
 })
 
-module.exports = createServer(app)
+export default app
