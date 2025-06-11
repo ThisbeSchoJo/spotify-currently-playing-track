@@ -2,6 +2,7 @@
   "name": "spotify-currently-playing-track",
   "private": "true",
   "version": "1.0.0",
+  "type": "module",
   "description": "Dynamically generate Spotify currently playing tracks for your github readme",
   "main": "index.js",
   "scripts": {
