@@ -1,5 +1,5 @@
 import express from 'express'
-import { createServer } from 'vercel-express'
+// import { createServer } from 'vercel-express'
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import SpotifyWebApi from 'spotify-web-api-node'
